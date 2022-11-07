@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label Content="Task Planner" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Height="73" Width="308" FontSize="48"/>
+        <TextBox x:Name="usernameInput" HorizontalAlignment="Center" Margin="0,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.698,3.616" TextChanged="usernameInput_TextChanged"/>
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="255,128,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="324,196,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="Button_Click"/>
 
     </Grid>
 </Window>

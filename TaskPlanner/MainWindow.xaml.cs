@@ -20,9 +20,25 @@ namespace TaskPlanner
     /// </summary>
     public partial class MainWindow : Window
     {
+        private TaskPlannerWindow _taskPlannerWindow;
+        private string _username;
+
         public MainWindow()
         {
             InitializeComponent();
+            _taskPlannerWindow = new TaskPlannerWindow();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            _taskPlannerWindow.Show();
+            _taskPlannerWindow.SetUsername(this._username);
+            _taskPlannerWindow.ShowWelcomeUsernameLabel();
+        }
+
+        private void usernameInput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            _username = this.usernameInput.Text;
         }
     }
 }
