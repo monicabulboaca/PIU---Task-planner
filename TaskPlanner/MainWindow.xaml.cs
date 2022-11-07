@@ -32,6 +32,7 @@ namespace TaskPlanner
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             _taskPlannerWindow.Show();
+            this.Close();
             _taskPlannerWindow.SetUsername(this._username);
             _taskPlannerWindow.ShowWelcomeUsernameLabel();
         }
