@@ -40,6 +40,6 @@ namespace TaskPlanner
         private void usernameInput_TextChanged(object sender, TextChangedEventArgs e)
         {
             _username = this.usernameInput.Text;
-        }
+        }                    
     }
 }
