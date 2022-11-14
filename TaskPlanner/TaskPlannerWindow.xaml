@@ -7,7 +7,13 @@
         mc:Ignorable="d"
         Title="TaskPlannerWindow" Height="450" Width="800">
     <Grid>
+        <Rectangle x:Name="rectangleList" HorizontalAlignment="Left" Height="39" Margin="48,57,0,0" Stroke="Black" VerticalAlignment="Top" Width="98" Fill="#FFBEBABA"/>
         <Label x:Name="welcomeUsernameLabel" Content="" HorizontalAlignment="Left" Margin="601,19,0,0" VerticalAlignment="Top" Height="54" Width="152"/>
-
+        <Button x:Name="btnAddCard" HorizontalAlignment="Left" Margin="53,67,0,0" VerticalAlignment="Top" Width="86" Click="Button_Click">
+            <StackPanel>
+                <TextBlock Text="Add a list" />
+            </StackPanel>
+        </Button>
+        <Grid x:Name="listGrid" Margin="42,54,648,332"/>
     </Grid>
 </Window>

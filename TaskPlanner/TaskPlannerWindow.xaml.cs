@@ -20,6 +20,7 @@ namespace TaskPlanner
     public partial class TaskPlannerWindow : Window
     {
         private string _username;
+        private static int move = 0;
 
         public TaskPlannerWindow()
         {
@@ -34,6 +35,14 @@ namespace TaskPlanner
         public void ShowWelcomeUsernameLabel()
         {
             this.welcomeUsernameLabel.Content = "Welcome, " + this._username + "!";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            move += 10;
+            this.btnAddCard.Margin = new Thickness(53, 67 + move, 0, 0);
+            this.listGrid.Height += 10;
+            this.rectangleList.Height += 10;
         }
     }
 }
