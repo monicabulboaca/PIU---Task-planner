@@ -22,6 +22,8 @@ namespace TaskPlanner
         private string _username;
         private static int move = 0;
 
+        private TextBox textBox;
+
         public TaskPlannerWindow()
         {
             InitializeComponent();
@@ -43,6 +45,9 @@ namespace TaskPlanner
             this.btnAddCard.Margin = new Thickness(53, 67 + move, 0, 0);
             this.listGrid.Height += 10;
             this.rectangleList.Height += 10;
+
+            this.textBox = new TextBox();
+            textBox.Margin = new Thickness(53, 67, 0, 0);
         }
     }
 }
